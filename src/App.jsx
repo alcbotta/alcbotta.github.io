@@ -51,6 +51,7 @@ class App extends Component {
   }
 
 
+
   onMouseEnterTopContainer() {
     this.setState({
       topHeaderAdditionalInfo: true
