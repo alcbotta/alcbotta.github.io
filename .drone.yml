@@ -5,7 +5,7 @@ steps:
   - name: build
     image: node:12.10
     commands:
-      - pws
+      - pwd
       - ls -all
       - npm install
       - npm run build
