@@ -7,8 +7,8 @@ steps:
     commands:
       - npm install
       - npm run build
-      - mkdir /drone/src/docs
-      - mv ./build/* /drone/src/docs
+      - mkdir /drone/src/topublish
+      - mv ./build/* /drone/src/topublish
   - name: publish
     image: plugins/gh-pages
     settings:
@@ -16,7 +16,7 @@ steps:
         from_secret: github_username
       password:
         from_secret: github_password
-      pages_directory: docs/
+      pages_directory: topublish/
       temporary_base: tmp/
       target_branch: master
 
