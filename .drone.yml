@@ -3,7 +3,7 @@ name: default
 
 steps:
   - name: build
-    image: node:12.10
+    image: node:12.6
     commands:
       - npm install
       - npm run build
