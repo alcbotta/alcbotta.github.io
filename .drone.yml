@@ -1,0 +1,20 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: build
+    image: node:12.10
+    commands:
+      - npm install
+      - npm run build
+      - mkdir /drone/src/public
+      - mv ./build/* /drone/src/public
+  - name: publish
+    image: plugins/gh-pages
+    settings:
+      username:
+        from_secret: github_username
+      password:
+        from_secret: github_password
+      pages_directory: public/
+      temporary_base: tmp/
