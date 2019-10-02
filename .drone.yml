@@ -18,5 +18,5 @@ steps:
         from_secret: github_password
       pages_directory: docs/
       temporary_base: tmp/
-      target_branch: master
+      # target_branch: master
 
