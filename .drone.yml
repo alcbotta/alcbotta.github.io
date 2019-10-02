@@ -5,6 +5,8 @@ steps:
   - name: build
     image: node:12.10
     commands:
+      - pws
+      - ls -all
       - npm install
       - npm run build
       - mkdir /drone/src/public
