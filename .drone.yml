@@ -18,5 +18,5 @@ steps:
         from_secret: github_password
       pages_directory: topublish/
       temporary_base: tmp/
-      target_branch: gh-pages
+      # target_branch: gh-pages
 
