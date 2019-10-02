@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "d990e2b01efc9c11565e",
-    "url": "/static/css/main.95fe3dd7.chunk.css"
+    "revision": "4aab022d62f1b966b063",
+    "url": "/static/css/main.67ac92d3.chunk.css"
   },
   {
-    "revision": "d990e2b01efc9c11565e",
-    "url": "/static/js/main.d990e2b0.chunk.js"
+    "revision": "4aab022d62f1b966b063",
+    "url": "/static/js/main.4aab022d.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.42ac5946.js"
   },
   {
-    "revision": "432e95d27ebb6753ce33",
-    "url": "/static/css/2.cafb8803.chunk.css"
+    "revision": "da038f4acc30db5085a9",
+    "url": "/static/css/2.2dbb932b.chunk.css"
   },
   {
-    "revision": "432e95d27ebb6753ce33",
-    "url": "/static/js/2.432e95d2.chunk.js"
+    "revision": "da038f4acc30db5085a9",
+    "url": "/static/js/2.da038f4a.chunk.js"
   },
   {
     "revision": "49dcdfd1e2a8148e9fd911d748a60664",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/uob_logo.a673e7f5.png"
   },
   {
-    "revision": "2eb861cb785fc32ca8529430293be7e3",
+    "revision": "9dfad38c3cea12dd388606513dfa8815",
     "url": "/index.html"
   }
 ];
