@@ -56,7 +56,6 @@ class App extends Component {
     })
   }
 
-
   onMouseLeaveTopContainer() {
     this.setState({
       topHeaderAdditionalInfo: false
