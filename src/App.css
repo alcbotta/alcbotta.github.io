@@ -1,4 +1,4 @@
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -7,8 +7,6 @@ body {
   --base-header-color: rgb(40, 81, 114);
   --base-header-color-active: rgb(19, 39, 56);
   --section-second-color: rgb(234, 241, 241);
-  /* --base-color: #2c98f0; */
-  /* --base-color: #bd3838; */
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
@@ -16,7 +14,6 @@ body {
 }
 
 .main-section {
-  /* background: #2c98f0; */
   background: var(--base-color);
   font-size: 18px;
   color: white;
@@ -32,8 +29,6 @@ body {
 
 .header-shrink {
   min-height: 50px;
-  /* font-size: 22px;
-  transition: 0.5s; */
 }
 .sticky {
   position: fixed;
@@ -51,11 +46,6 @@ body {
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 1s;
-  /* 
-  position: fixed;
-  width: 100%; 
-  background-color: rgba(0,0,0,0.5); 
-  z-index: 2;  */
 }
 
 @keyframes fadeInOpacity {
@@ -82,12 +72,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* .custom-section > div{
-  margin-top: -285px; 
-  padding-top: 285px; 
-  display: inline-block;
-} */
-
 .custom-section:nth-child(even) {
   background: var(--section-second-color);
 }
@@ -107,16 +91,6 @@ body {
 .custom-section:last-child{
   padding-bottom: 30px;
 }
-
-
-
-/* .custom-section .title:nth-child(even) {
-color: white;
-}
-
-.custom-section .title:nth-child(odd) {
-  color: var(--base-color);
-  } */
 
 .inline-block {
   display: inline-block;
@@ -140,11 +114,6 @@ color: white;
   padding: 5px;
   transition-duration: 1s;
   border: 1px solid var(--base-color);
-  /* animation-name: cv-animation;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-  animation-duration: 1s; */
-  /* margin-left: auto; */
 }
 
 .curriculum-vitae:hover {
@@ -158,7 +127,6 @@ a > .curriculum-vitae, .curriculum-vitae:hover {
   text-decoration: none;
   float: right;
   vertical-align: middle;
-  /*Change to middle*/
 }
 
 .contact-me {
@@ -201,7 +169,6 @@ a > .curriculum-vitae, .curriculum-vitae:hover {
 }
 
 .contact-me .contacts {
-  /* justify-content: center; */
   padding-top: 40px;
   display: flex;
   align-items: center;
@@ -244,11 +211,7 @@ a > .curriculum-vitae, .curriculum-vitae:hover {
   min-height: 100;
   flex-direction:row;
   align-items: center;
-  /* justify-content: center; */
   font-size: 24px;
-  /* position: fixed;
-   position: fixed;
-  width: 100%; */
 }
 .Navbar__Link {
   padding: 10px;
@@ -304,4 +267,4 @@ a > .curriculum-vitae, .curriculum-vitae:hover {
 
 .Navbar__Link__Active{
   background: var(--base-header-color-active);
-}
+} */

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Calistoga&display=swap");
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%; }
+  html .app,
+  body .app,
+  #root .app {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
+
+section {
+  min-height: 100%;
+  min-width: 100%; }
+  section:nth-child(odd) {
+    background: rgba(211, 211, 211, 0.336); }
+  section .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    font-weight: bold; }
+
+.main-section {
+  background: #21afdf;
+  font-size: 18px;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  color: white; }
+
+.avatar-img {
+  margin-top: 100px;
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid white; }
+
+.botta-navbar-brand {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5); }
+
+.botta-brand-social {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 3;
+  justify-content: space-around; }
+  .botta-brand-social a {
+    color: rgba(0, 0, 0, 0.5); }
+
+#root > div.app > div.botta-navbar > nav {
+  background: transparent !important;
+  transition: background 0.5s ease; }
+
+#root > div.app > div.botta-navbar > nav > a.navbar-brand {
+  display: flex;
+  flex-grow: 3; }
+
+#root > div > div.botta-navbar.show.transparent > navbar {
+  background: transparent !important;
+  transition: background 0.5s ease; }
+
+#root > div > div.botta-navbar.show > nav {
+  background: #21afdf !important;
+  transition: opacity 0.5s ease, background 0.5 ease; }
+
+#contactForm > div.flutture-button-container > button {
+  padding: 0px !important;
+  border: 0px; }
+
+#root > div > div.botta-navbar.hide > nav {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease; }
+
+.nav-item {
+  font-size: 20px; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    background-color: rgba(211, 211, 211, 0.39);
+    border-radius: 3px;
+    transition: all 0.3s ease 0s; }
+  .navbar-light .navbar-nav .nav-link:focus {
+    color: white; }
+
+.botta-body {
+  height: 100%; }
+
+.botta-section-main-image {
+  width: 100%;
+  height: 125vh; }
+
+.company-description {
+  position: absolute;
+  background: transparent;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 700px;
+  max-width: 50%;
+  flex-direction: column;
+  margin-left: 40px;
+  color: white; }
+
+.botta-section {
+  display: flex;
+  flex-direction: column; }
+  .botta-section .botta-section-title {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center; }
+    .botta-section .botta-section-title .title {
+      font-size: 30px;
+      font-weight: bold; }
+
+.flutture-btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; }
+
+.effect01 {
+  color: #fff;
+  border: 4px solid #000;
+  box-shadow: inset 0 0 0 1px #000;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out; }
+  .effect01:hover {
+    border: 4px solid #666;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 4px #eee; }
+  .effect01 span {
+    transition: all 0.2s ease-out;
+    z-index: 1; }
+
+.effect01:hover span {
+  letter-spacing: 0.13em;
+  color: #333; }
+
+.effect01:after {
+  background: #fff;
+  border: 0 solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 1; }
+
+.effect01:hover::after {
+  background: #fff;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  transform: rotate(40deg); }
