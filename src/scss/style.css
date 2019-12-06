@@ -1,29 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Calistoga&display=swap");
 html,
 body,
 #root {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  scroll-behavior: smooth; }
   html .app,
   body .app,
   #root .app {
     scroll-behavior: smooth;
     height: 100%;
-    width: 100%;
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; }
-
-section {
-  min-height: 100%;
-  min-width: 100%; }
-  section:nth-child(odd) {
-    background: rgba(211, 211, 211, 0.336); }
-  section .title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    font-weight: bold; }
+    width: 100%; }
 
 .main-section {
   background: #21afdf;
@@ -125,6 +111,33 @@ section {
     .botta-section .botta-section-title .title {
       font-size: 30px;
       font-weight: bold; }
+
+section .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  font-weight: bold; }
+
+.custom-section {
+  padding-bottom: 100px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; }
+  .custom-section:nth-child(odd) {
+    background: rgba(211, 211, 211, 0.336); }
+  .custom-section .body {
+    align-self: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row; }
+    .custom-section .body .left, .custom-section .body .right {
+      padding: 20px;
+      width: 500px; }
+
+.send-button {
+  background: #21afdf !important;
+  border-color: #21afdf !important; }
 
 .flutture-btn {
   letter-spacing: 0.1em;

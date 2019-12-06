@@ -1,6 +1,7 @@
+// https://medium.com/@cgroom/a-software-engineers-one-page-portfolio-4f85ab8a20d1
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Container, Row, Col, Form, FormGroup, Input, Label, Button, Media } from 'reactstrap';
+import { Container, Form, FormGroup, Input, Label, Button } from 'reactstrap';
 import {
     Collapse,
     Navbar,
@@ -10,11 +11,7 @@ import {
     NavItem,
     NavLink,
 } from "reactstrap";
-import Certifications from '../../components/Certifications/Certification';
-
 import avatar from "../../assets/images/perfil.jpg";
-import utfprLogo from '../../assets/images/utfpr_logo.webp';
-import uobLogo from '../../assets/images/uob_logo.png';
 import brFlag from "../../assets/images/br.svg";
 import ausFlag from "../../assets/images/australia.svg";
 
@@ -47,23 +44,15 @@ const DefaultLayout = props => {
             }
 
             const sections = document.querySelectorAll(".custom-section");
-            // console.log(sections)
-
             let sectionID = ""
             sections.forEach(section => {
                 if (window.pageYOffset >= section.offsetTop - 100 &&
                     window.pageYOffset <= section.offsetTop + section.offsetHeight - 100) {
-
                     sectionID = section.id
-
                 }
             });
-
             setActiveNavitem(sectionID)
-
             prevScrollY.current = currentScrollY;
-
-
         };
         window.addEventListener("scroll", scrollHandler, true);
         return () => {
@@ -107,38 +96,14 @@ const DefaultLayout = props => {
                             <NavItem active={isActive("about")}>
                                 <NavLink href="#about">{t("navbar.aboutme")}</NavLink>
                             </NavItem>
-                            <NavItem active={isActive("projects")}>
-                                <NavLink href="#projects">{t("navbar.projects")}</NavLink>
+                            <NavItem active={isActive("interests")}>
+                                <NavLink href="#interests">{t("navbar.projects")}</NavLink>
                             </NavItem>
-                            <NavItem active={isActive("education")}>
-                                <NavLink href="#education">{t("navbar.education")}</NavLink>
-                            </NavItem>
-                            <NavItem active={isActive("certifications")}>
-                                <NavLink href="#certifications">{t("navbar.certifications")}</NavLink>
-                            </NavItem>
+
                             <NavItem active={isActive("contact")}>
                                 <NavLink href="#contact">{t("navbar.contactme")}</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    title={t("title.visitFacebook")}
-                                    href="https://www.facebook.com/dijkstraai"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
 
-                                </NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink
-                                    title={t("title.visitLinkedin")}
-                                    href="https://www.linkedin.com/company/dijkstraai/about/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-
-                                </NavLink>
-                            </NavItem>
 
                             <NavItem>
                                 <NavLink onClick={() => changeLanguage("br")}>
@@ -168,7 +133,6 @@ const DefaultLayout = props => {
                 </Navbar>
             </div>
             <section className="main-section"
-            // ref="mainSectionRef"  
             >
                 <img src={avatar} alt="Avatar" className="avatar-img" />
 
@@ -182,104 +146,69 @@ const DefaultLayout = props => {
                 id="about">
                 <div className="title">
                     <h2>ABOUT ME </h2>
+                    <div className="spacer2">  <br /></div>
+
                 </div>
-                <div className="spacer2">  <br /></div>
 
-                <Container>
-                    <Row>
-                        <Col>
-                            <div className="content">
-                                TODO
-                  </div>
-                        </Col>
-                        <Col>
-                            TODO
-                </Col>
-                    </Row>
-                </Container>
+                <div className="body">
 
+                    <div className="left">
+                        <div>
+                            I am a software engineer with almost three years of experience.
+                            Moved from Brazil, where I used to work with Machine Learning and Big Data, to Australia
+                            and since then have been working as a full stack software engineer.
+                            In this period, I developed many new skills with technologies such as: Docker, ReactJS, Spring Boot,
+                             Golang and other.
+                                 </div>
+
+                        <div>
+                            I am comfortable dealing directly with clients, gathering requirements and, from them,
+                            designing, implementing and delivering the solution for the problem.
+                                 </div>
+
+                    </div>
+                    <div className="right">
+                        <h4>Most recent highlight</h4>
+                        Designed and implemented an inteire software system to manage the many aspects of the businees,
+                                including: Orders Status, Commissions, Customer Relationship, Project Management and other features.
+                                This project reduced drastically errors made the users, when projects were managed using spreadsheet,
+                                improved precision and it fits the need of the company, rather than being a generic software.
+                    </div>
+                </div>
             </section>
 
-            <section className="custom-section" id="projects">
+            <section className="custom-section" id="interests">
                 <div className="title">
-                    <h2>PROJECTS AND INTERESTS</h2>
+                    <h2>INTERESTS</h2>
+                    <div className="spacer2">  <br /></div>
+
                 </div>
-                <div className="spacer2">  <br /></div>
+                <div className="body">
+                    <div className="left">
+                        <ul>
+                            <li><strong>Machine Learning:</strong> I have worked with machine learning for a couple of years now.
+                            It started with developing a model to predict the ball position on a Robot Soccer match;
+                            next I studied and applied different ML algorithms for Number Plate Recognition with Computer
+                            Vision; after that, professionally, when I was the leader of a project to develop a ML model
+                                to detect fault windmills, allowing a faster repair and reduce down time.  </li>
+                            <li><strong>IoT:</strong> I am really excited about all the possibilities
+                            around IoT. I have worked with it before, and intend to work with it again
+                            in the future.</li>
+                        </ul>
+                    </div>
+                    <div className="right">
+                        <h3>Other Things </h3>
+                        <li>I held a CCNA (Cisco Certified Network Associated) from 2016 to 2019.
 
-                <Container>
-                    <Row>
-                        <Col>
-                            <h3>RECENT PROJECTS</h3>
-                            <ul>
-                                <li>
+                        </li>
+                        <li>Occasionally I write on <a href="https://medium.com/@alcbotta" className="default-icon-size"
+                            rel="noopener noreferrer" target="_blank">
+                            Medium
+                        </a>, about different things that I find interesting.  </li>
 
-                                </li>
-                                <li>TODO</li>
-                                <li>TODO</li>
-                            </ul>
-                        </Col>
-                        <Col>
-                            <h3>RECENT PROJECTS</h3>
-                            TODO
-
-                </Col>
-                    </Row>
-                </Container>
-            </section>
-            <section className="custom-section" id="education">
-                <div className="title">
-                    <h2>EDUCATION</h2>
+                    </div>
                 </div>
-                <div className="spacer2">  <br /></div>
 
-                <Container>
-                    <Row>
-                        <Col>
-                            <Media>
-                                <Media left >
-                                    <img width={64} height={64} src={utfprLogo} alt="thumbnail" />
-
-                                </Media>
-                                <Media body>
-                                    <Media heading>
-                                        Federal University of Technology – Parana
-        </Media>
-                                    Computer Engineering - Five years undergraduate course
-      </Media>
-                            </Media>
-                        </Col>
-                        <Col>
-                            <Media>
-                                <Media left >
-                                    <img width={64} height={64} src={uobLogo} alt="thumbnail" />
-                                </Media>
-                                <Media body>
-                                    <Media heading>
-                                        University of Birmingham
-        </Media>
-                                    Computer Science/Software Engineering - One year undergraduate study abroad
-      </Media>
-                            </Media>
-                        </Col>
-                    </Row>
-
-                </Container>
-            </section>
-
-
-            <section className="custom-section" id="certifications">
-                <div className="title">
-                    <h2>CERTIFICATIONS</h2>
-                </div>
-                <div className="spacer2">  <br /></div>
-
-                <Container>
-                    <Row>
-                        <Col>
-                            <Certifications />
-                        </Col>
-                    </Row>
-                </Container>
             </section>
 
             <section className="custom-section" id="contact">
@@ -303,7 +232,7 @@ const DefaultLayout = props => {
                                 <Label>Message</Label>
                                 <Input required type="textarea" name="contact-message" id="contact-message" placeholder="Your message" />
                             </FormGroup>
-                            <Button>Send</Button>
+                            <Button className="send-button">Send</Button>
 
                         </Form>
 
@@ -311,7 +240,7 @@ const DefaultLayout = props => {
                 </div>
             </section>
 
-        </div>
+        </div >
     );
 
 }
