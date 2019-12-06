@@ -132,79 +132,49 @@ const DefaultLayout = props => {
                     </Collapse>
                 </Navbar>
             </div>
-            <section className="main-section"
-            >
+            <section className="main-section">
                 <img src={avatar} alt="Avatar" className="avatar-img" />
-
                 <h2>Andre Luiz Costantino Botta</h2>
-                <h4>Full Stack Software Engineer </h4>
-
-
+                <h4>{t("avatar.jobTitle")}</h4>
             </section>
             <section
                 className="custom-section"
                 id="about">
                 <div className="title">
-                    <h2>ABOUT ME </h2>
+                    <h2>{t("section.about.title")}</h2>
                     <div className="spacer2">  <br /></div>
-
                 </div>
-
                 <div className="body">
-
                     <div className="left">
-                        <div>
-                            I am a software engineer with almost three years of experience.
-                            Moved from Brazil, where I used to work with Machine Learning and Big Data, to Australia
-                            and since then have been working as a full stack software engineer.
-                            In this period, I developed many new skills with technologies such as: Docker, ReactJS, Spring Boot,
-                             Golang and other.
-                                 </div>
-
-                        <div>
-                            I am comfortable dealing directly with clients, gathering requirements and, from them,
-                            designing, implementing and delivering the solution for the problem.
-                                 </div>
-
+                        <div>{t("section.about.p1")}</div>
+                        <div>{t("section.about.p2")}</div>
                     </div>
                     <div className="right">
-                        <h4>Most recent highlight</h4>
-                        Designed and implemented an inteire software system to manage the many aspects of the businees,
-                                including: Orders Status, Commissions, Customer Relationship, Project Management and other features.
-                                This project reduced drastically errors made the users, when projects were managed using spreadsheet,
-                                improved precision and it fits the need of the company, rather than being a generic software.
+                        <h4>{t("section.highlights")}</h4>
+                        <div>{t("section.highlights.p1")}</div>
                     </div>
                 </div>
             </section>
 
             <section className="custom-section" id="interests">
                 <div className="title">
-                    <h2>INTERESTS</h2>
+                    <h2>{t("section.interests")}</h2>
                     <div className="spacer2">  <br /></div>
-
                 </div>
                 <div className="body">
                     <div className="left">
                         <ul>
-                            <li><strong>Machine Learning:</strong> I have worked with machine learning for a couple of years now.
-                            It started with developing a model to predict the ball position on a Robot Soccer match;
-                            next I studied and applied different ML algorithms for Number Plate Recognition with Computer
-                            Vision; after that, professionally, when I was the leader of a project to develop a ML model
-                                to detect fault windmills, allowing a faster repair and reduce down time.  </li>
-                            <li><strong>IoT:</strong> I am really excited about all the possibilities
-                            around IoT. I have worked with it before, and intend to work with it again
-                            in the future.</li>
+                            <li><strong>Machine Learning:</strong>{t("section.interests.p1")}</li>
+                            <li><strong>IoT:</strong>{t("section.interests.p2")}</li>
                         </ul>
                     </div>
                     <div className="right">
-                        <h3>Other Things </h3>
-                        <li>I held a CCNA (Cisco Certified Network Associated) from 2016 to 2019.
-
-                        </li>
-                        <li>Occasionally I write on <a href="https://medium.com/@alcbotta" className="default-icon-size"
+                        <h3>{t("section.other")}</h3>
+                        <li>{t("section.other.p1")}</li>
+                        <li>{t("section.other.p2.1") + " "}<a href="https://medium.com/@alcbotta" className="default-icon-size"
                             rel="noopener noreferrer" target="_blank">
                             Medium
-                        </a>, about different things that I find interesting.  </li>
+                        </a>{t("section.other.p2.2")}</li>
 
                     </div>
                 </div>
@@ -214,23 +184,23 @@ const DefaultLayout = props => {
             <section className="custom-section" id="contact">
                 <div className="container">
                     <div className="title">
-                        <h2>CONTACT ME</h2>
+                        <h2>{t("contact")}</h2>
                     </div>
                     <div className="spacer2">  <br /></div>
                     <Container>
                         <Form action="https://formspree.io/alcbotta@gmail.com" method="POST" name="sentMessage" id="contactForm" noValidate>
 
                             <FormGroup>
-                                <Label>Name</Label>
-                                <Input required={true} type="text" name="contact-name" id="contact-name" placeholder="Your name" />
+                                <Label>{t("contact.name")}</Label>
+                                <Input required={true} type="text" name="contact-name" id="contact-name" placeholder={t("contact.namePlaceholder")} />
                             </FormGroup>
                             <FormGroup>
-                                <Label>Email</Label>
-                                <Input required type="email" name="contact-email" id="contact-email" placeholder="Your email" />
+                                <Label>{t("contact.email")}</Label>
+                                <Input required type="email" name="contact-email" id="contact-email" placeholder={t("contact.emailPlaceholder")} />
                             </FormGroup>
                             <FormGroup>
-                                <Label>Message</Label>
-                                <Input required type="textarea" name="contact-message" id="contact-message" placeholder="Your message" />
+                                <Label>{t("contact.message")}</Label>
+                                <Input required type="textarea" name="contact-message" id="contact-message" placeholder={t("contact.messagePlaceholder")} />
                             </FormGroup>
                             <Button className="send-button">Send</Button>
 
