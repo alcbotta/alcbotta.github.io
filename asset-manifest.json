@@ -1,18 +1,27 @@
 {
-  "main.css": "/static/css/main.67ac92d3.chunk.css",
-  "main.js": "/static/js/main.4aab022d.chunk.js",
-  "main.js.map": "/static/js/main.4aab022d.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.42ac5946.js",
-  "runtime~main.js.map": "/static/js/runtime~main.42ac5946.js.map",
-  "static/css/2.2dbb932b.chunk.css": "/static/css/2.2dbb932b.chunk.css",
-  "static/js/2.da038f4a.chunk.js": "/static/js/2.da038f4a.chunk.js",
-  "static/js/2.da038f4a.chunk.js.map": "/static/js/2.da038f4a.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.1644b4738f7a8d218f7a38c6f0b14c43.js": "/precache-manifest.1644b4738f7a8d218f7a38c6f0b14c43.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/2.2dbb932b.chunk.css.map": "/static/css/2.2dbb932b.chunk.css.map",
-  "static/css/main.67ac92d3.chunk.css.map": "/static/css/main.67ac92d3.chunk.css.map",
-  "static/media/perfil.jpg": "/static/media/perfil.49dcdfd1.jpg",
-  "static/media/uob_logo.png": "/static/media/uob_logo.a673e7f5.png",
-  "static/media/utfpr_logo.webp": "/static/media/utfpr_logo.4f7c54ca.webp"
+  "files": {
+    "main.css": "/static/css/main.d49a7b28.chunk.css",
+    "main.js": "/static/js/main.d6cac146.chunk.js",
+    "main.js.map": "/static/js/main.d6cac146.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bbc06ef5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bbc06ef5.js.map",
+    "static/css/2.9720967d.chunk.css": "/static/css/2.9720967d.chunk.css",
+    "static/js/2.7810da4b.chunk.js": "/static/js/2.7810da4b.chunk.js",
+    "static/js/2.7810da4b.chunk.js.map": "/static/js/2.7810da4b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d6d6f4cdad3164640db6811f8ec8d652.js": "/precache-manifest.d6d6f4cdad3164640db6811f8ec8d652.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9720967d.chunk.css.map": "/static/css/2.9720967d.chunk.css.map",
+    "static/css/main.d49a7b28.chunk.css.map": "/static/css/main.d49a7b28.chunk.css.map",
+    "static/media/australia.svg": "/static/media/australia.cab2eac6.svg",
+    "static/media/br.svg": "/static/media/br.a102e563.svg",
+    "static/media/perfil.jpg": "/static/media/perfil.49dcdfd1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bbc06ef5.js",
+    "static/css/2.9720967d.chunk.css",
+    "static/js/2.7810da4b.chunk.js",
+    "static/css/main.d49a7b28.chunk.css",
+    "static/js/main.d6cac146.chunk.js"
+  ]
 }
