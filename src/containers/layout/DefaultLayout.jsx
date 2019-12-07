@@ -189,7 +189,6 @@ const DefaultLayout = props => {
                     <div className="spacer2">  <br /></div>
                     <Container>
                         <Form action="https://formspree.io/alcbotta@gmail.com" method="POST" name="sentMessage" id="contactForm" noValidate>
-
                             <FormGroup>
                                 <Label>{t("contact.name")}</Label>
                                 <Input required={true} type="text" name="contact-name" id="contact-name" placeholder={t("contact.namePlaceholder")} />

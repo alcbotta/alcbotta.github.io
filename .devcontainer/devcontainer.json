@@ -20,6 +20,7 @@
   // "postCreateCommand": "yarn install",
   "postCreateCommand": "git config --global user.email alcbotta@gmail.com && git config --global user.name \"Andre Botta\"",
   "extensions": [
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ]
 }
