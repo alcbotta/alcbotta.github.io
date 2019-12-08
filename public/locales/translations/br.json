@@ -11,7 +11,7 @@
     "contact.email": "Email",
     "contact.emailPlaceholder": "Seu email",
     "contact.message": "Mensagem",
-    "contact.messagePlaceholder": "Sua mensage",
+    "contact.messagePlaceholder": "Sua mensagem",
     "contact.sendButton": "Enviar",
     "section.about.title": "Sobre mim",
     "section.about.p1": "Sou um Engenheiro de Software com aproximadamente três anos de experiência. Me mudei do Brasil, onde trabalhei com Machine Learning e Big Data, para a Austrália e, desde então, trabalho como engenheiro de software Full Stack. Nesse período, desenvolvi muitas novas habilidades com tecnologias como: Docker, ReactJS, Spring Boot, Golang, entre outras.",
@@ -19,10 +19,10 @@
     "section.highlights": "Destaque Mais Recente",
     "section.highlights.p1": "Projetei e implementei uma sistema de software completo para gerenciar os vários aspectos dos negócios da empresa, incluindo: status dos pedidos, comissões, relacionamento com o cliente, gerenciamento de projetos e outros recursos. Esse projeto reduziu drasticamente os erros cometidos pelos usuários, quando os projetos foram gerenciados usando planilha, aprimorou a precisão e atende às necessidades específicas da empresa",
     "section.interests": "Interesses",
-    "section.interests.p1": "Trabalhei com Machine Learning por alguns anos. Tudo começou com o desenvolvimento de um modelo para prever a posição da bola em uma partida de futebol de robôs; em seguida, estudei e apliquei diferentes algoritmos de ML para o Reconhecimento Automático da Placa de Veículos com visão computacional; e, profissionalmente, quando eu era o líder de um projeto para desenvolver um modelo de ML para detectar falhas em aerogeradores, permitindo um reparo mais rápido e reduzindo o tempo de inatividade.",
-    "section.interests.p2": "A área de IoT traz incríveis oportunidates. Trabalhei com IoT no passado e pretendo trabalhar novamente nessa área no futuro.",
+    "section.interests.p1": " &nbsp; Trabalhei com Machine Learning por alguns anos. Tudo começou com o desenvolvimento de um modelo para prever a posição da bola em uma partida de futebol de robôs; em seguida, estudei e apliquei diferentes algoritmos de ML para o Reconhecimento Automático da Placa de Veículos com visão computacional; e, profissionalmente, quando eu era o líder de um projeto para desenvolver um modelo de ML para detectar falhas em aerogeradores, permitindo um reparo mais rápido e reduzindo o tempo de inatividade.",
+    "section.interests.p2": " &nbsp; A área de IoT traz incríveis oportunidates. Trabalhei com IoT no passado e pretendo trabalhar novamente nessa área no futuro.",
     "section.other": "Outras Informações",
-    "section.other.p1": "Eu fui um CCNA (Cisco Certified Network Associated) entre 2016 e 2019.",
+    "section.other.p1": "Fui certificado como CCNA (Cisco Certified Network Associated) entre 2016 e 2019.",
     "section.other.p2.1": "Ocasionalmente eu publico artigos no",
-    "section.other.p2.2": ", sobre diferentes coisas que eu acho interessante."
+    "section.other.p2.2": ", sobre diferentes tecnologias que eu acho interessante."
 }

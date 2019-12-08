@@ -27,6 +27,12 @@ const DefaultLayout = props => {
 
     const toggle = () => setIsOpen(!isOpen);
 
+    const closeNavbar = () => {
+        if (isOpen === true) {
+            toggle();
+        }
+    }
+
     const changeLanguage = language => {
         i18n.changeLanguage(language);
     };
@@ -93,20 +99,23 @@ const DefaultLayout = props => {
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="ml-auto" navbar>
 
-                            <NavItem active={isActive("about")}>
+                            <NavItem onClick={() => closeNavbar()} active={isActive("about")}>
                                 <NavLink href="#about">{t("navbar.aboutme")}</NavLink>
                             </NavItem>
-                            <NavItem active={isActive("interests")}>
+                            <NavItem onClick={() => closeNavbar()} active={isActive("interests")}>
                                 <NavLink href="#interests">{t("navbar.projects")}</NavLink>
                             </NavItem>
 
-                            <NavItem active={isActive("contact")}>
+                            <NavItem onClick={() => closeNavbar()} active={isActive("contact")}>
                                 <NavLink href="#contact">{t("navbar.contactme")}</NavLink>
                             </NavItem>
 
 
                             <NavItem>
-                                <NavLink onClick={() => changeLanguage("br")}>
+                                <NavLink onClick={() => {
+                                    changeLanguage("br")
+                                    closeNavbar()
+                                }}>
                                     <img
                                         className="dlogo"
                                         src={brFlag}
@@ -118,7 +127,10 @@ const DefaultLayout = props => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLink onClick={() => changeLanguage("en")}>
+                                <NavLink onClick={() => {
+                                    changeLanguage("en")
+                                    closeNavbar()
+                                }}>
                                     <img
                                         className="dlogo"
                                         src={ausFlag}
@@ -132,12 +144,13 @@ const DefaultLayout = props => {
                     </Collapse>
                 </Navbar>
             </div>
-            <section className="main-section">
+            <section onClick={() => closeNavbar()} className="main-section">
                 <img src={avatar} alt="Avatar" className="avatar-img" />
                 <h2>Andre Luiz Costantino Botta</h2>
                 <h4>{t("avatar.jobTitle")}</h4>
             </section>
             <section
+                onClick={() => closeNavbar()}
                 className="custom-section"
                 id="about">
                 <div className="title">
@@ -156,7 +169,7 @@ const DefaultLayout = props => {
                 </div>
             </section>
 
-            <section className="custom-section" id="interests">
+            <section onClick={() => closeNavbar()} className="custom-section" id="interests">
                 <div className="title">
                     <h2>{t("section.interests")}</h2>
                     <div className="spacer2">  <br /></div>
@@ -181,7 +194,7 @@ const DefaultLayout = props => {
 
             </section>
 
-            <section className="custom-section" id="contact">
+            <section onClick={() => closeNavbar()} className="custom-section" id="contact">
                 <div className="container">
                     <div className="title">
                         <h2>{t("contact")}</h2>
