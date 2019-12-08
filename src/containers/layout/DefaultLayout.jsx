@@ -177,8 +177,8 @@ const DefaultLayout = props => {
                 <div className="body">
                     <div className="left">
                         <ul>
-                            <li><strong>Machine Learning:</strong>{t("section.interests.p1")}</li>
-                            <li><strong>IoT:</strong>{t("section.interests.p2")}</li>
+                            <li><strong>Machine Learning: </strong>{t("section.interests.p1")}</li>
+                            <li><strong>IoT: </strong>{t("section.interests.p2")}</li>
                         </ul>
                     </div>
                     <div className="right">
